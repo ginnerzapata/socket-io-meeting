@@ -7,11 +7,11 @@ export const RequestList = () => {
   const { socket } = useContext(SocketContext);
 
   useEffect(() => {
-    socket.on("request-list", (requests) => setData(requests));
+    //work here
   }, [socket]);
 
   const handleRemove = (id) => {
-    socket.emit("delete-request", id);
+    //work here
   };
   return (
     <Card title="My Requests">
